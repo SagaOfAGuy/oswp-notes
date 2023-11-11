@@ -10,8 +10,9 @@ sudo airodump-ng wlan0mon --band abg
 
 We find our WPA Enterprise network of interest:
 
-**Screenshot of initial airodump screenshot goes here:  
-**![](image.png)
+**Screenshot of initial airodump screenshot goes here:**
+
+![](image.png)
 
   
 
