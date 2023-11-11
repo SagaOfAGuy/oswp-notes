@@ -16,7 +16,7 @@ sudo airodump-ng wlan0mon --band abg
 We find our WPA Enterprise network of interest:
 
 **Screenshot of initial airodump screenshot goes here:**
-![](Files/image.png)
+![](image.png)
 
   
 
@@ -32,7 +32,7 @@ sudo airodump-ng wlan0mon --bssid <BSSID>  --channel <CHANNEL> -w <FILE_PREFIX> 
 
 **Screenshot of targeted airodump goes here:**
 
-![](Files/image.png)
+![](image.png)
 
   
 
@@ -46,11 +46,11 @@ sudo aireplay-ng -0 10 -a <WIFI NETWORK MAC ADDRESS> -c  <CLIENT MAC ADDRESS> wl
 
 **Screenshot of capturing 4-way handshake:**
 
-![](Files/image.png)
+![](image.png)
 
 **Screenshot of de-authenticating the client:**
 
-![](Files/image.png)
+![](image.png)
 
   
 
@@ -64,7 +64,7 @@ tls
 
 **Screenshot of capturing tls certificate in the PCAP:**
 
-![](Files/image.png)
+![](image.png)
 
   
 
@@ -74,7 +74,7 @@ tls
 
 **Screenshot of Certificate field Goes here:**
 
-![](Files/image.png)
+![](image.png)
 
   
 We also take a look at the `identity`  response that the 4-way handshake reveals is connecting to the network. We find an `identity`  frame, and we take note of the identity / username. The format should be `DOMAIN\user`  or something similar. 
@@ -85,7 +85,7 @@ To grab the identity, we click **Edit** > **Find Packet** , and we search fo
 
 **Screenshot of Identity / Username:**
 
-![](Files/image.png)
+![](image.png)
 
   
 
@@ -98,7 +98,7 @@ openssl x509  -inform der -in <CERTIFICATE>.der -text
 
 **Screenshot of certificate:**
 
-![](Files/image.png)
+![](image.png)
 
   
 
@@ -128,7 +128,7 @@ commonName = "ubuntuguest"
 
 **Screenshot of `server.cnf`  file:** 
 
-![](Files/image.png)
+![](image.png)
 
   
 
@@ -154,7 +154,7 @@ commonName = "ubuntuguest"
 
 **Screenshot of `ca.cnf`  file:** 
 
-![](Files/image.png)
+![](image.png)
 
   
 
@@ -191,7 +191,7 @@ We get an error message at the very bottom, but this is fine since we are not co
 
  **Screenshot of error message:**
 
-![](Files/image.png)
+![](image.png)
 
   
 
@@ -267,7 +267,7 @@ mana_eaptls=1
 
 **Screenshot of mana.conf file:**
 
-![](Files/image.png)
+![](image.png)
 
   
 
@@ -287,7 +287,7 @@ sudo vim /etc/hostapd-mana/mana.eap_user
 
 **Screenshot of mana.eap\_user file:**
 
-![](Files/image.png)
+![](image.png)
 
   
 
@@ -302,7 +302,7 @@ sudo hostapd-mana /etc/hostapd-mana/mana.conf
 
 **Screenshot of running `hostapd-mana` :** 
 
-![](Files/image.png)
+![](image.png)
 
   
 
@@ -312,7 +312,7 @@ sudo hostapd-mana /etc/hostapd-mana/mana.conf
 
 **Screenshot of connection and user hashes**
 
-![](Files/image.png)
+![](image.png)
 
   
 
@@ -335,7 +335,7 @@ hashcat -a 0 -m 5500 <HASH FILE> /usr/share/john/passwords.lst
 
 **Screenshot of cracked hash:**
 
-![](Files/image.png)
+![](image.png)
 
   
 
@@ -359,7 +359,7 @@ network={
 
 **Screenshot of the identity we are logging in as from the 4-way handshake PCAP file:** 
 
-![](Files/image.png)
+![](image.png)
 
   
 
@@ -376,7 +376,7 @@ sudo dhclient -v wlan0
 
 **Screenshot of connecting to WiFi network:**
 
-**![](Files/image.png)
+**![](image.png)
 
   
 
@@ -389,7 +389,7 @@ ip a
 
 **Screenshot of wireless interface with new IP:**
 
-**![](Files/image.png)
+**![](image.png)
 
 ⁠
 
@@ -401,7 +401,7 @@ firefox x.x.x.1
 
 **Screenshot of router / gateway page:** 
 
-![](Files/image.png)
+![](image.png)
 
   
 
@@ -420,7 +420,7 @@ sudo airodump-ng wlan0mon --band abg
 We find our WPA Enterprise network of interest:
 
 **Screenshot of initial airodump screenshot goes here:**
-![](Files/image.png)
+![](image.png)
 
   
 
@@ -436,7 +436,7 @@ sudo airodump-ng wlan0mon --bssid <BSSID>  --channel <CHANNEL> -w <FILE_PREFIX> 
 
 **Screenshot of targeted airodump goes here:**
 
-![](Files/image.png)
+![](image.png)
 
   
 
@@ -471,7 +471,7 @@ sudo aireplay-ng --arpreplay -b <Wifi AP MAC Address> -h <MAC Address of Client>
 
 **Screenshot of attack:**
 
-![](Files/image.png)
+![](image.png)
 
   
 
@@ -492,7 +492,7 @@ sudo aircrack-ng -l ascii-key wep.cap
 
 **Screenshot of cracking pcap file:**
 
-⁠![](Files/image.png)
+⁠![](image.png)
 
   
 
@@ -543,7 +543,7 @@ firefox x.x.x.1
 
 **Screenshot of connecting to wireless network:**
 
-![](Files/image.png)
+![](image.png)
 
   
 
@@ -562,7 +562,7 @@ sudo airodump-ng wlan0mon --band abg
 We find our WPA Enterprise network of interest:
 
 **Screenshot of initial airodump screenshot goes here:  
-**![](Files/image.png)
+**![](image.png)
 
   
 
@@ -576,7 +576,7 @@ sudo airodump-ng wlan0mon --bssid <BSSID>  --channel <CHANNEL> -w <FILE_PREFIX> 
 
 **Screenshot of targeted airodump goes here:**
 
-![](Files/image.png)
+![](image.png)
 
   
 
@@ -597,7 +597,7 @@ sudo aireplay-ng -0 5 -a <BSSID> wlan0mon
 
 **Screenshot of 4-way handshake:**
 
-![](Files/image.png)
+![](image.png)
 
   
 
@@ -613,7 +613,7 @@ sudo aircrack-ng <PCAP FILE> -w /usr/share/john/password.lst
 
 **Screenshot of cracking 4-way handshake:**
 
-![](Files/image.png)
+![](image.png)
 
   
 
@@ -664,7 +664,7 @@ iwconfig
 
 **Screenshot of the wireless interface**
 
-![](Files/image.png)
+![](image.png)
 
 
 8. We browse to the router endpoint IP `x.x.x.1` in the browser: 
