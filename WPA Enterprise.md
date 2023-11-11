@@ -285,7 +285,7 @@ sudo vim /etc/hostapd-mana/mana.eap_user
 "t"   TTLS-PAP,TTLS-CHAP,TTLS-MSCHAP,MSCHAPV2,MD5,GTC,TTLS,TTLS-MSCHAPV2    "pass"   [2]
 ```
 
-**Screenshot of mana.eap\_user file:**
+**Screenshot of mana.eap_user file:**
 
 ![](image.png)
 
@@ -376,7 +376,7 @@ sudo dhclient -v wlan0
 
 **Screenshot of connecting to WiFi network:**
 
-**![](image.png)
+![](image.png)
 
   
 
@@ -389,7 +389,7 @@ ip a
 
 **Screenshot of wireless interface with new IP:**
 
-**![](image.png)
+![](image.png)
 
 ⁠
 
